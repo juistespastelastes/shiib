@@ -1,0 +1,1 @@
+(this["webpackJsonp@shibaswap/interface"]=this["webpackJsonp@shibaswap/interface"]||[]).push([[11],{1714:function(s,a){}}]);

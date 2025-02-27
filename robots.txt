@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://shibaswap-www.pages.dev/sitemap.xml
+
+# Запрещаем индексацию служебных разделов
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/

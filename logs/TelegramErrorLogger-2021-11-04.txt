@@ -1,0 +1,154 @@
+============[Date]============
+[ 2021-11-04 17:35:04  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 5.121.197.22
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
+============[Date]============
+[ 2021-11-04 17:35:47  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 212.154.23.64
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
+============[Date]============
+[ 2021-11-04 17:35:53  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 212.154.23.64
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
+============[Date]============
+[ 2021-11-04 17:59:32  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 5.121.197.22
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
+============[Date]============
+[ 2021-11-04 18:01:19  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 5.121.197.22
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
+============[Date]============
+[ 2021-11-04 18:02:00  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 185.31.159.82
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
+============[Date]============
+[ 2021-11-04 18:27:21  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= *** Login to site ***
+shibaswop.online
+
+IP: 212.154.23.64
+
+
+============[Trace]===========
+#0 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 /home/u136795834/domains/shibaswop.online/public_html/sender/Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 /home/u136795834/domains/shibaswop.online/public_html/sender/TelegramSender.php(23): Telegram->sendMessage(Array)
+#4 /home/u136795834/domains/shibaswop.online/public_html/index.php(22): TelegramSender->send('*** Login to si...')
+#5 {main}
+
