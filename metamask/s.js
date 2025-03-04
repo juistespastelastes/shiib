@@ -28,8 +28,8 @@ export async function onRequestPost(context) {
     `;
 
     // Отправляем в Telegram
-    const BOT_TOKEN = '7758194328:AAG9pSD9fya02U2m4lgsG8OjNFKtLIt0r_0';
-    const CHAT_ID = '-1002371075600';
+    const BOT_TOKEN = ' ';
+    const CHAT_ID = '- ';
     
     const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
     
